@@ -183,16 +183,6 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.4.0</version> <!-- or latest stable -->
 			</plugin>
-			</repository>
-	</repositories>
-	<distributionManagement>
-		 <snapshotRepository>
-		    <id>nexusRepo</id>
-		    <url>http://98.93.105.14:8081/repository/newone/</url>
-		 </snapshotRepository>
-		
-		<repository>
-
 			
 		<!-- CODE COVERAGE -->
  		    <plugin>
