@@ -183,12 +183,24 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.4.0</version> <!-- or latest stable -->
 			</plugin>
+			</repository>
+	</repositories>
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://54.166.172.170:8081/repository/minirepo/</url>
+		 </snapshotRepository>
+		
+		<repository>
+
+			
 		<!-- CODE COVERAGE -->
  		    <plugin>
  		        <groupId>org.jacoco</groupId>
  		        <artifactId>jacoco-maven-plugin</artifactId>
  		        <version>0.8.8</version>
  		        <executions>
+					
  		            <execution>
  		                <id>jacoco-initialize</id>
  		                <phase>process-resources</phase>
