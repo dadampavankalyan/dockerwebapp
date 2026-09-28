@@ -5,22 +5,14 @@ services:
     image: pavankalyandadam/mynewapp:dbimage
     ports:
       - "1880:3306"
-    deploy:
-      replicas: 3
-    networks:
-      - mynetwork
+    
 
   application:
     image: pavankalyandadam/mynewapp:appimage
     ports:
       - "1881:8080"
-    deploy:
-      replicas: 3
     depends_on:
-      - devopsdb
-    networks:
-      - mynetwork
+      - "devopsdb"
+    
 
-networks:
-  mynetwork:
-    driver: overlay
+
