@@ -2,13 +2,13 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: pavankalyandadam/mynewapp:dbimage
+    image: dadampavankalyan/mynewapp:dbimage
     ports:
       - "1880:3306"
     
 
   application:
-    image: pavankalyandadam/mynewapp:appimage
+    image: dadampavankalyan/mynewapp:appimage
     ports:
       - "1881:8080"
     depends_on:
